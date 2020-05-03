@@ -1,0 +1,139 @@
+h3, h4
+{
+	color: rgb(71, 144, 153);
+}
+
+h1, h2
+{
+	font-size: x-large;
+	text-align: center;
+}
+
+h3
+{
+	font-size: large;
+	font-weight: bolder;
+	/*border: solid;*/
+	text-shadow: 0.5px 0.5px 1px rgb(71, 144, 153);
+}
+
+h4
+{
+	font-size: medium;
+}
+
+@font-face { /*Definition d'une police nommee Romantically */
+	font-family: "Romantically";
+	src: url("Romantically/Romantically Italic.otf");
+	src: url("Romantically/Romantically.otf");
+}
+
+.prenoms {
+	font-family: Romantically;
+	color: rgb(71, 144, 153);
+}
+
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("opensans_regular_macroman/OpenSans-Regular-webfont.woff");
+}
+
+body 
+{
+	font-family: OpenSansRegular;
+	font-style: normal;
+	text-align: justify-all;
+	/*background-image: url("AudreyChanciaMebaley.jpg");
+	background-repeat: no-repeat;*/ 
+}
+
+p{
+	size: xx-small;
+}
+
+.nom
+{
+	font-weight: bold;
+	font-size: 1.7em;
+}
+
+.imageflottante
+{
+	float: left;
+}
+
+.corps
+{
+	display: flex;
+	justify-content: space-around;
+	/*border: 2px solid #CCC;*/
+}
+
+.gauche
+{
+	width: 25% ;
+	/*border: 1px solid #CCC;*/
+	background-color: #CCC;
+	/*padding: 4px;*/
+	/*text-shadow: 0.5px 0.5px 1px rgb(71, 144, 153);*/
+}
+
+.TitreContacts
+{
+	background-color: rgb(71, 144, 153);
+	color: white;
+	text-align: center;
+	width: 98.5%;
+	padding: 3px;
+}
+
+.droite
+{
+	width: 75% ;
+	border: 1px solid #CCC;
+	/*background-color: #CCC;*/
+	padding: 4px; 
+	/*text-shadow: 0.5px 0.5px 1px rgb(71, 144, 153);*/
+}
+
+.far {
+	color: rgb(71, 144, 153); 
+}
+
+.fas {
+	color: rgb(71, 144, 153); 
+}
+
+footer
+{
+	text-align: center;
+	font-size: small;
+}
+
+/*{
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+}*/
+
+/*.item{
+  opacity: 1;
+  cursor: pointer;
+  background-color: #7971ea;
+  border: 2px solid #443ea0;
+  border-radius: 8px;
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}*/
+
+/*.item: hover{
+  opacity:0.7;
+}*/
+
+/*.contacts
+{
+	background-color: black;
+}*/
