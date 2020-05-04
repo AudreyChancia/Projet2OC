@@ -1,107 +1,314 @@
-h3, h4
-{
-	color: rgb(71, 144, 153);
+/*Polices personnalisées.
+
+Définition des styles principaux de la page (largeur du site, fond, couleur par défaut du texte).
+
+En-tête et liens de navigation.
+
+Bannière (représentant le pont de San Francisco).
+
+Section principale du corps de page, au centre.
+
+Pied de page (footer).*/
+
+/* Définition des polices personnalisées */
+
+@font-face 
+{ 
+	/*Definition d'une police nommee Romantically Regular */
+    font-family: 'romanticallyregular';
+    src: url('Romantically/romantically-webfont.woff2') format('woff2'),
+         url('Romantically/romantically-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-h1, h2
+@font-face 
+{ 
+	/*Definition d'une police nommee Romantically Italic */
+    font-family: 'romantically_italicregular';
+    src: url('Romantically/romantically_italic-webfont.woff2') format('woff2'),
+         url('Romantically/romantically_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{ 
+	/*Definition d'une police nommee OpenSansRegular */
+    font-family: 'open_sansregular', sans-serif;
+    src: url('opensans_regular_macroman/OpenSans-Regular-webfont.eot');
+    src: url('opensans_regular_macroman/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans_regular_macroman/OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('opensans_regular_macroman/OpenSans-Regular-webfont.woff') format('woff'),
+         url('opensans_regular_macroman/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('opensans_regular_macroman/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
+body 
+{
+	font-family: open_sansregular, sans-serif;
+	font-style: normal;
+	text-align: justify-all;
+	margin: 20px;
+	/*background-image: url("AudreyChanciaMebaley.jpg");
+	background-repeat: no-repeat;*/ 
+}
+
+#bloc_page
+{
+    width: 1280px;
+    margin: auto;
+    /*background-color: white;*/
+    box-shadow: 0px 0px 3px black;
+}
+
+h1
 {
 	font-size: x-large;
 	text-align: center;
+	/*margin-bottom: 0;
+	margin-top: 0;
+	line-height: 1em;*/
+}
+
+h2
+{
+	font-size: x-large;
+	text-align: center;
+	/*margin-top: 0px;*/
+}
+
+h3, h4
+{
+	color: rgb(71, 144, 153);
 }
 
 h3
 {
 	font-size: large;
 	font-weight: bolder;
-	/*border: solid;*/
-	text-shadow: 0.5px 0.5px 1px rgb(71, 144, 153);
 }
 
 h4
 {
 	font-size: medium;
+	margin-bottom: 0px;
 }
 
-@font-face { /*Definition d'une police nommee Romantically */
-	font-family: "Romantically";
-	src: url("Romantically/Romantically Italic.otf");
-	src: url("Romantically/Romantically.otf");
-}
-
-.prenoms {
-	font-family: Romantically;
-	color: rgb(71, 144, 153);
-}
-
-@font-face {
-    font-family: "OpenSansRegular";
-    src: url("opensans_regular_macroman/OpenSans-Regular-webfont.woff");
-}
-
-body 
+h5
 {
-	font-family: OpenSansRegular;
-	font-style: normal;
-	text-align: justify-all;
-	/*background-image: url("AudreyChanciaMebaley.jpg");
-	background-repeat: no-repeat;*/ 
+	margin-top: 8px;
 }
-
 p{
 	size: xx-small;
 }
 
-.nom
-{
-	font-weight: bold;
-	font-size: 1.7em;
-}
-
-.imageflottante
-{
-	float: left;
-}
-
-.corps
+.corps 
 {
 	display: flex;
 	justify-content: space-around;
 	/*border: 2px solid #CCC;*/
 }
 
-.gauche
+/*.gauche
 {
-	width: 25% ;
+	/*width: 25% ;
+	background-color: rgb(71, 144, 153);*/
 	/*border: 1px solid #CCC;*/
-	background-color: #CCC;
 	/*padding: 4px;*/
 	/*text-shadow: 0.5px 0.5px 1px rgb(71, 144, 153);*/
 }
 
+.gauche {
+    background-color: rgb(71, 144, 153);
+    color: rgb(64, 64, 64);
+    text-align: left;
+    width: /*300px;*/ /*240px;*/ 91%;
+    flex-shrink: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*padding: /*30px;*/ /*50px;*/
+    /*border: 1px solid #CCC;*/
+}
+
 .TitreContacts
 {
-	background-color: rgb(71, 144, 153);
-	color: white;
+	background-color: rgb(64, 64, 64);
+	color: rgb(71, 144, 153);
 	text-align: center;
-	width: 98.5%;
-	padding: 3px;
+	margin-bottom: 50px;
+	width: 95%;
+	padding: 8px;
+	flex: 1;
+}
+
+.gauche p 
+{
+    padding: 16px;
+    background-color: rgb(71, 144, 153);
+    text-align: justify;
+    color: rgb(64, 64, 64);
+    font-weight: bold;
+}
+
+.icones {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    align-items: center;
+
+}
+
+.icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: solid;
+    padding: 10px;
+}
+
+.loisirs {
+    padding-bottom: 80px;
+    align-items: center;
+}
+
+/* Header */
+
+header
+{
+	display: flex;
+	flex-wrap: nowrap;
+	color: rgb(64, 64, 64);
+	align-items: center;
+	/*background: #CCC;*/
+}
+
+.prenoms 
+{
+	font-family: romanticallyregular;
+	color: rgb(71, 144, 153);
+	text-align: center;
+	align-items: center;
+}
+
+.nom
+{
+	font-weight: bold;
+	font-size: 1.7em;
+	text-align: center;
+	color: black;
+	align-items: center;
+}
+
+.profession
+{
+	text-align: center;
+}
+
+.devel {
+    text-decoration: underline;
+    text-decoration-color: rgb(71, 144, 153);
+}
+
+.Photo
+{
+	padding: 50px;
+    flex-shrink: 0;
+    text-align: center;
+    width: /*240px;*/ 20%;
+    background-color: rgb(71, 144, 153);
+    align-items: center;
+    /*display: flex;
+    flex-direction: column;*/
+}
+
+img 
+{
+	border-radius: 100%;
+	box-shadow: 0px 0px 20px rgb(64 64 64);
+	align-items: center;
+}
+
+.title
+{
+	padding-left: 300px;
+	padding-right: 40px;
+	align-items: center;
+}
+.imageflottante
+{
+	float: left;
+}
+
+.training, .work, .skills, .recommendation
+{
+	color: black;
 }
 
 .droite
 {
-	width: 75% ;
-	border: 1px solid #CCC;
+	width: 100% ;
+	/*border: 1px solid #CCC;*/
 	/*background-color: #CCC;*/
-	padding: 4px; 
-	/*text-shadow: 0.5px 0.5px 1px rgb(71, 144, 153);*/
+	padding: 6px; 
+    padding-left: 50px;
+    padding-right: 50px;
+    flex: auto;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(64, 64, 64);
 }
 
 .far {
 	color: rgb(71, 144, 153); 
+	align-items: center;
 }
 
 .fas {
 	color: rgb(71, 144, 153); 
+	align-items: center;
+}
+
+.article {
+	display: flex;
+}
+
+.dateetlieu {
+	display: flex;
+	flex-direction: row;
+	/*float: left;*/
+	width: 150px;
+	border: 1px solid black;
+	align-items: baseline;
+	flex-shrink: 0;
+	font-size: 18px;
+}
+
+.information {
+	padding-left: 10px;
+}
+
+.details {
+	justify-content: space-around;
+    padding-right: 50px;
+    padding-left: 100px;
+    align-self: stretch;
+}
+
+.details h5 {
+    margin-bottom: 0;
+}
+
+.formation h4 {
+    margin-top: 20px;
 }
 
 footer
@@ -109,6 +316,11 @@ footer
 	text-align: center;
 	font-size: small;
 }
+
+/*.details {
+	float: right;
+	border: 1px solid blue;
+}*/
 
 /*{
   background-color: green;
