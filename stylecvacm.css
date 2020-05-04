@@ -110,7 +110,8 @@ p{
 .corps 
 {
 	display: flex;
-	justify-content: space-around;
+	/*justify-content: space-around;*/
+	width: 100%;
 	/*border: 2px solid #CCC;*/
 }
 
@@ -127,11 +128,11 @@ p{
     background-color: rgb(71, 144, 153);
     color: rgb(64, 64, 64);
     text-align: left;
-    width: /*300px;*/ /*240px;*/ 91%;
-    flex-shrink: 0; 
+    width: 25%;
+    /*flex-shrink: 0; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;*/
     /*padding: /*30px;*/ /*50px;*/
     /*border: 1px solid #CCC;*/
 }
@@ -141,7 +142,6 @@ p{
 	background-color: rgb(64, 64, 64);
 	color: rgb(71, 144, 153);
 	text-align: center;
-	margin-bottom: 50px;
 	width: 95%;
 	padding: 8px;
 	flex: 1;
@@ -260,15 +260,13 @@ img
 
 .droite
 {
-	width: 100% ;
-	/*border: 1px solid #CCC;*/
-	/*background-color: #CCC;*/
+	width: 75%;
 	padding: 6px; 
     padding-left: 50px;
     padding-right: 50px;
-    flex: auto;
+    /*flex: auto;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;*/
     color: rgb(64, 64, 64);
 }
 
@@ -282,7 +280,7 @@ img
 	align-items: center;
 }
 
-.article {
+article {
 	display: flex;
 }
 
@@ -314,6 +312,7 @@ img
 
 .formation h4 {
     margin-top: 20px;
+    display: flex;
 }
 
 footer
