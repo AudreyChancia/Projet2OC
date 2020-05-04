@@ -145,6 +145,8 @@ p{
 	width: 95%;
 	padding: 8px;
 	flex: 1;
+	/*width: 50%;
+    height: 50%*/
 }
 
 .gauche p 
@@ -154,6 +156,9 @@ p{
     text-align: justify;
     color: rgb(64, 64, 64);
     font-weight: bold;
+    /*flex-wrap: wrap;*/
+    /*width: 50%;
+    height: 50%*/
 }
 
 .icones {
