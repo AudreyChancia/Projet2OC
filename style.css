@@ -1,17 +1,8 @@
-/*Polices personnalisées.
-
-Définition des styles principaux de la page (largeur du site, fond, couleur par défaut du texte).
-
-En-tête 
-
-Section principale du corps de page, au centre.
-
-Pied de page (footer).*/
+/* Style CSS CV ACM */
 
 /* Définition des polices personnalisées */
 
-@font-face 
-{ 
+@font-face { 
 	/*Definition d'une police nommee Romantically Regular */
     font-family: 'romanticallyregular';
     src: url('Romantically/romantically-webfont.woff2') format('woff2'),
@@ -20,8 +11,7 @@ Pied de page (footer).*/
     font-style: normal;
 }
 
-@font-face 
-{ 
+@font-face { 
 	/*Definition d'une police nommee Romantically Italic */
     font-family: 'romantically_italicregular';
     src: url('Romantically/romantically_italic-webfont.woff2') format('woff2'),
@@ -30,8 +20,7 @@ Pied de page (footer).*/
     font-style: normal;
 }
 
-@font-face 
-{ 
+@font-face { 
 	/*Definition d'une police nommee OpenSansRegular */
     font-family: 'open_sansregular', sans-serif;
     src: url('opensans_regular_macroman/OpenSans-Regular-webfont.eot');
@@ -44,65 +33,114 @@ Pied de page (footer).*/
     font-style: normal;
 }
 
+/* Header */
+
+header {
+	display: flex;
+	flex-wrap: nowrap;
+	color: rgb(64, 64, 64);
+	align-items: center;
+	width: 100%;
+}
+
+.prenoms {
+	font-family: romanticallyregular;
+	color: rgb(71, 144, 153);
+	text-align: center;
+	align-items: center;
+}
+
+.nom {
+	font-weight: bold;
+	font-size: 1.7em;
+	text-align: center;
+	color: black;
+	align-items: center;
+}
+
+.profession {
+	text-align: center;
+}
+
+.devel {
+    text-decoration: underline;
+    text-decoration-color: rgb(71, 144, 153);
+}
+
+.title {
+	padding-left: 50px;
+	padding-right: 350px;
+	align-items: center;
+	width: 75%;
+}
+
+.Photo {
+	padding: 50px;
+    text-align: center;
+    width: 25%;
+    background-color: rgb(71, 144, 153);
+    align-items: center;
+    display: flex;
+}
+
+img {
+	border-radius: 100%;
+	box-shadow: 0px 0px 20px rgb(64 64 64);
+	align-items: center;
+	display: flex;
+}
+
 /* Eléments principaux de la page */
 
-body 
-{
+body {
 	font-family: open_sansregular, sans-serif;
 	font-style: normal;
 	text-align: justify-all;
 	margin: 20px;
-}
-
-/*#bloc_page
-{
-    width: 1280px;
+	width: 1280px;
     margin: auto;
-    /*background-color: white;*/
-    /*box-shadow: 0px 0px 3px black;*/
+    background-color: white;
+    box-shadow: 0px 0px 3px black;
+}
 
-h1
-{
+h1 {
 	font-size: x-large;
 	text-align: center;
 }
 
-h2
-{
+h2 {
 	font-size: x-large;
 	text-align: center;
 }
 
-h3, h4
-{
+h3, h4 {
 	color: rgb(71, 144, 153);
 }
 
-h3
-{
+h3 {
 	font-size: large;
 	font-weight: bolder;
 }
 
-h4
-{
+h4 {
 	font-size: medium;
 	margin-bottom: 0px;
 }
 
-h5
-{
+h5 {
 	margin-top: 8px;
 }
-p{
+
+p {
 	size: xx-small;
 }
 
-.corps 
-{
+.corps {
 	display: flex;
 	width: 100%;
 }
+    
+/* Gauche */
 
 .gauche {
     background-color: rgb(71, 144, 153);
@@ -111,18 +149,16 @@ p{
     width: 25%;
 }
 
-.TitreContacts
-{
+.TitreContacts {
 	background-color: rgb(64, 64, 64);
 	color: rgb(71, 144, 153);
 	text-align: center;
-	width: 95%;
+	width: 94.5%;
 	padding: 8px;
 	flex: 1;
 }
 
-.gauche p 
-{
+.gauche p {
     padding: 16px;
     background-color: rgb(71, 144, 153);
     text-align: justify;
@@ -135,7 +171,6 @@ p{
     justify-content: space-around;
     padding-top: 20px;
     align-items: center;
-
 }
 
 .icone {
@@ -154,107 +189,24 @@ p{
     align-items: center;
 }
 
-/* Header */
+/* Droite */
 
-header
-{
-	display: flex;
-	flex-wrap: nowrap;
-	color: rgb(64, 64, 64);
-	align-items: center;
-}
-
-.prenoms 
-{
-	font-family: romanticallyregular;
-	color: rgb(71, 144, 153);
-	text-align: center;
-	align-items: center;
-}
-
-.nom
-{
-	font-weight: bold;
-	font-size: 1.7em;
-	text-align: center;
-	color: black;
-	align-items: center;
-}
-
-.profession
-{
-	text-align: center;
-}
-
-.devel {
-    text-decoration: underline;
-    text-decoration-color: rgb(71, 144, 153);
-}
-
-.Photo
-{
-	padding: 50px;
-    text-align: center;
-    width: 25%;
-    background-color: rgb(71, 144, 153);
-    align-items: center;
-    display: flex;
-}
-
-img 
-{
-	border-radius: 100%;
-	box-shadow: 0px 0px 20px rgb(64 64 64);
-	align-items: center;
-}
-
-.title
-{
-	padding-left: 300px;
-	padding-right: 40px;
-	align-items: center;
-}
-.imageflottante
-{
-	float: left;
-}
-
-.training, .work, .skills, .recommendation
-{
-	color: black;
-}
-
-.droite
-{
-	width: 50%;
+.droite {
+	width: 75%;
 	padding: 6px; 
     padding-left: 50px;
     padding-right: 50px;
     color: rgb(64, 64, 64);
 }
 
-.far {
-	color: rgb(71, 144, 153); 
-	align-items: center;
-}
-
-.fas {
-	color: rgb(71, 144, 153); 
-	align-items: center;
-}
-
-article {
-	display: flex;
-}
-
 .dateetlieu {
 	display: flex;
 	flex-direction: row;
 	width: 150px;
-	border: 1px solid black;
 	align-items: baseline;
 	flex-shrink: 0;
-	font-size: 18px;
+	font-size: 15px;
+	font-weight: bold;
 }
 
 .information {
@@ -263,7 +215,7 @@ article {
 
 .details {
 	justify-content: space-around;
-    padding-right: 50px;
+    padding-right: 40px;
     padding-left: 100px;
     align-self: stretch;
 }
@@ -272,13 +224,45 @@ article {
     margin-bottom: 0;
 }
 
+article {
+	display: flex;
+}
+
+.recommandations {
+	display: flex;
+    padding-left: 40px;
+    margin-right: 300px;
+    justify-content: space-between;
+}
+
 .formation h4 {
     margin-top: 20px;
     display: flex;
 }
 
-footer
-{
+.droite h3 {
+	border-bottom: 1px solid rgb(71, 144, 153);
+    padding-bottom: 5px;
+}
+
+.training, .work, .skills, .recommendation {
+	color: black;
+}
+
+.far {
+	color: rgb(71, 144, 153); 
+	align-items: center;
+}
+
+.fas {
+	color: rgb(71, 144, 153)*; 
+	align-items: center;
+}
+
+/* Footer */
+
+footer {
 	text-align: center;
 	font-size: small;
+	color: rgb(64, 64, 64);
 }
