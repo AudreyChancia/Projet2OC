@@ -46,31 +46,33 @@ header {
 .prenoms {
 	font-family: romanticallyregular;
 	color: rgb(71, 144, 153);
-	text-align: center;
-	align-items: center;
+	text-align: left;
+	align-items: left;
 }
 
 .nom {
 	font-weight: bold;
 	font-size: 1.7em;
-	text-align: center;
+	text-align: left;
 	color: black;
-	align-items: center;
+	align-items: left;
 }
 
 .profession {
-	text-align: center;
+	text-align: left;
+	align-items: left;
+	padding-right: 180px;
 }
 
 .devel {
-    text-decoration: underline;
-    text-decoration-color: rgb(71, 144, 153);
+    border-bottom: 2.3px solid rgb(71, 144, 153);
+    padding-bottom: 5px;
 }
 
 .title {
 	padding-left: 50px;
 	padding-right: 350px;
-	align-items: center;
+	align-items: left;
 	width: 75%;
 }
 
@@ -100,7 +102,7 @@ body {
 	width: 1280px;
     margin: auto;
     background-color: white;
-    box-shadow: 0px 0px 3px black;
+    box-shadow: 0px 0px 3px black
 }
 
 h1 {
@@ -140,6 +142,26 @@ p {
 	width: 100%;
 }
     
+/*#liseré*/ /*#contenu*/
+/*{
+    display: inline-block;
+    vertical-align: top;
+}*/
+
+/*#liseré
+{   
+    width: 2%;
+    margin-right: 3%;
+    height: 500px;
+    background-image: url('lodyas.png');
+    border-radius: 30px;
+}*/
+
+/*#contenu
+{
+    width: 85%;
+}*/
+
 /* Gauche */
 
 .gauche {
@@ -182,6 +204,7 @@ p {
     border-radius: 100%;
     border: solid;
     padding: 10px;
+    color: rgb(64, 64, 64);
 }
 
 .loisirs {
@@ -241,7 +264,7 @@ article {
 }
 
 .droite h3 {
-	border-bottom: 1px solid rgb(71, 144, 153);
+	border-bottom: 2.3px solid rgb(71, 144, 153);
     padding-bottom: 5px;
 }
 
@@ -254,10 +277,10 @@ article {
 	align-items: center;
 }
 
-.fas {
-	color: rgb(71, 144, 153)*; 
+/*.fas {
+	color: rgb(71, 144, 153); 
 	align-items: center;
-}
+}*/
 
 /* Footer */
 
@@ -266,3 +289,45 @@ footer {
 	font-size: small;
 	color: rgb(64, 64, 64);
 }
+
+/* Ecrans */
+
+@media screen and (max-width: 1280px) {
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+@media screen and (max-width: 1280px)
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+@media all and (min-width: 1024px) and (max-width: 1280px)
+
+/* Sur les téléviseurs */
+@media tv
+
+/* Sur tous types d'écrans orientés verticalement */
+@media all and (orientation: portrait)
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+@media all and (max-width: 1024px)
+{
+    section
+    {
+        display: block;
+        width: auto;
+    }
+
+    /*#liseré
+    {
+        display: none;
+    }
+
+    #contenu
+    {
+        width: auto;
+    }
+
+}*/
