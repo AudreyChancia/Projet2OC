@@ -76,7 +76,7 @@ header h2 {
 }
 
 .prenoms {
-	font-family: romanticallyregular;
+	font-family: romanticallyregular, sans-serif;
 	color: rgb(71, 144, 153);
 	text-align: left;
 }
