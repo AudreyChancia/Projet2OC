@@ -40,23 +40,25 @@ header {
 	flex-wrap: nowrap;
 	color: rgb(64, 64, 64);
 	align-items: center;
-	background-color: rgb(71, 144, 153);
 }
 
 .Photo {
 	width: 25%;
-	padding-top: 5%;
-	padding-bottom: 4%;
-	position: relative;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: rgb(71, 144, 153);
+	flex-shrink: 0;
+	text-align: center;
 }
 
 img {
 	border-radius: 100%;
 	box-shadow: 0px 0px 20px rgb(64 64 64);
-	position: absolute;
-	top: 50%;
-	left:50%;
-	transform: translate(-50%, -50%);
+}
+
+.title {
+	width: 75%;
+	background-color: #ffffff;
 }
 
 header h1 {
@@ -92,13 +94,6 @@ header h2 {
 .devel {
     border-bottom: 2.3px solid rgb(71, 144, 153);
     padding-bottom: 1%;
-}
-
-.title {
-	padding-top: 5%;
-	padding-bottom: 4%;
-	width: 75%;
-	background-color: #ffffff;
 }
 
 /* Eléments principaux de la page */
@@ -261,12 +256,20 @@ header {
 }
 
 .Photo {
-	padding-top: 30%;
+	padding-top: 0%; 
 	padding-bottom: 0%;
+	width: auto;
+	background-color: #ffffff;
 }
 
 img {
    	border: 5px solid rgb(71, 144, 153);
+}
+
+.title {
+	padding-top: 0%;
+	padding-bottom: 0%;
+	width: auto;
 }
 
 header h1 {
@@ -297,20 +300,9 @@ header h2 {
     padding-bottom: 1%;
 }
 
-.title {
-	padding-top: 0%;
-	padding-bottom: 0%;
-	background-color: #ffffff;
-}
-
 .corps {
     flex-direction: column-reverse;
     width: auto;
-}
-
-.photo {
-    width: auto;
-    background-color: transparent;
 }
 
 .droite {
@@ -322,12 +314,6 @@ header h2 {
     width: auto;
 }
 
-.dateetlieu {
-	width: auto;
-	align-items: baseline;
-	font-weight: bold;
-}
-
 .information { 
 	padding-left: 1%;
 }
@@ -335,7 +321,7 @@ header h2 {
 .details {
     padding-right: 0%;
     padding-left: 0%;
-    align-self: stretch;
+    text-align: center;
     width: auto;
 }
 
