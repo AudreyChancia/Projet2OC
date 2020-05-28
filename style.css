@@ -40,56 +40,65 @@ header {
 	flex-wrap: nowrap;
 	color: rgb(64, 64, 64);
 	align-items: center;
-	width: 100%;
+	background-color: rgb(71, 144, 153);
+}
+
+.Photo {
+	width: 25%;
+	padding-top: 5%;
+	padding-bottom: 4%;
+	position: relative;
+}
+
+img {
+	border-radius: 100%;
+	box-shadow: 0px 0px 20px rgb(64 64 64);
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+
+header h1 {
+	font-size: xx-large;
+	font-weight: bolder;
+}
+
+header h2 {
+	font-size: x-large;
+	font-weight: bolder;
+}
+
+.identity {
+	padding-left: 5%;
 }
 
 .prenoms {
 	font-family: romanticallyregular;
 	color: rgb(71, 144, 153);
 	text-align: left;
-	align-items: left;
 }
 
 .nom {
-	font-weight: bold;
-	font-size: 1.7em;
-	text-align: left;
+	font-size: 130%;
 	color: black;
-	align-items: left;
 }
 
 .profession {
 	text-align: left;
-	align-items: left;
-	padding-right: 180px;
+	padding-left: 5%;
 }
 
 .devel {
     border-bottom: 2.3px solid rgb(71, 144, 153);
-    padding-bottom: 5px;
+    padding-bottom: 1%;
 }
 
 .title {
-	padding-left: 50px;
-	padding-right: 350px;
-	align-items: left;
+	padding-top: 5%;
+	padding-bottom: 4%;
 	width: 75%;
-}
-
-.Photo {
-	padding: 50px;
-    text-align: center;
-    width: 25%;
-    background-color: rgb(71, 144, 153);
-    align-items: center;
-    display: flex;
-}
-
-img {
-	border-radius: 100%;
-	box-shadow: 0px 0px 20px rgb(64 64 64);
-	align-items: center;
-	display: flex;
+	background-color: #ffffff;
 }
 
 /* Eléments principaux de la page */
@@ -98,189 +107,140 @@ body {
 	font-family: open_sansregular, sans-serif;
 	font-style: normal;
 	text-align: justify-all;
-	margin: 20px;
-	width: 1280px;
+    margin: 1%;
+    background-color: #ffffff;
+}
+
+.cv {
     margin: auto;
     background-color: white;
-    box-shadow: 0px 0px 3px black
-}
-
-h1 {
-	font-size: x-large;
-	text-align: center;
-}
-
-h2 {
-	font-size: x-large;
-	text-align: center;
-}
-
-h3, h4 {
-	color: rgb(71, 144, 153);
-}
-
-h3 {
-	font-size: large;
-	font-weight: bolder;
-}
-
-h4 {
-	font-size: medium;
-	margin-bottom: 0px;
-}
-
-h5 {
-	margin-top: 8px;
-}
-
-p {
-	size: xx-small;
+    box-shadow: 0px 0px 10px black;
+    align-items: center;
 }
 
 .corps {
 	display: flex;
-	width: 100%;
+	flex-wrap: nowrap;
 }
-    
-/*#liseré*/ /*#contenu*/
-/*{
-    display: inline-block;
-    vertical-align: top;
-}*/
 
-/*#liseré
-{   
-    width: 2%;
-    margin-right: 3%;
-    height: 500px;
-    background-image: url('lodyas.png');
-    border-radius: 30px;
-}*/
+h1 {
+	font-size: x-large;
+}
 
-/*#contenu
-{
-    width: 85%;
-}*/
+h2 {
+	font-size: large;
+}
+
+h3 {
+	font-size: medium;
+	font-weight: bolder;
+}
 
 /* Gauche */
 
 .gauche {
-    background-color: rgb(71, 144, 153);
+	background-color: rgb(71, 144, 153);
     color: rgb(64, 64, 64);
     text-align: left;
     width: 25%;
+    position: relative;
 }
 
-.TitreContacts {
+.gauche h1 {
 	background-color: rgb(64, 64, 64);
 	color: rgb(71, 144, 153);
 	text-align: center;
-	width: 94.5%;
-	padding: 8px;
-	flex: 1;
+	padding: 3%;
 }
 
 .gauche p {
-    padding: 16px;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 6%;
+    padding-bottom: 20%;
     background-color: rgb(71, 144, 153);
     text-align: justify;
     color: rgb(64, 64, 64);
     font-weight: bold;
 }
 
+.propos {
+	padding-bottom: 200%;
+}
+
 .icones {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 20px;
     align-items: center;
+    padding-top: 6%;
+    padding-bottom: 6%;
 }
 
 .icone {
-    display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
     border-radius: 100%;
     border: solid;
-    padding: 10px;
+    padding: 3%;
     color: rgb(64, 64, 64);
-}
-
-.loisirs {
-    padding-bottom: 80px;
-    align-items: center;
 }
 
 /* Droite */
 
 .droite {
 	width: 75%;
-	padding: 6px; 
-    padding-left: 50px;
-    padding-right: 50px;
     color: rgb(64, 64, 64);
+    padding-top: 2%;
+}
+
+.formation, .experience, .competences, .recommandations {
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 .dateetlieu {
 	display: flex;
 	flex-direction: row;
-	width: 150px;
+	width: 25%;
 	align-items: baseline;
 	flex-shrink: 0;
-	font-size: 15px;
 	font-weight: bold;
 }
 
 .information {
-	padding-left: 10px;
+	padding-left: 5%;
 }
 
 .details {
 	justify-content: space-around;
-    padding-right: 40px;
-    padding-left: 100px;
     align-self: stretch;
+    width: 75%;
 }
 
-.details h5 {
-    margin-bottom: 0;
+.droite h1 {
+	border-bottom: 2.3px solid rgb(71, 144, 153);
+	padding-bottom: 1%;
+	color: black;
+	text-align: left;
+}
+
+.droite h2, .droite h3 {
+	text-align: left;
 }
 
 article {
 	display: flex;
 }
 
-.recommandations {
-	display: flex;
-    padding-left: 40px;
-    margin-right: 300px;
-    justify-content: space-between;
+.recommandation2 {
+	padding-left: 30%;
 }
 
-.formation h4 {
-    margin-top: 20px;
-    display: flex;
-}
-
-.droite h3 {
-	border-bottom: 2.3px solid rgb(71, 144, 153);
-    padding-bottom: 5px;
-}
-
-.training, .work, .skills, .recommendation {
-	color: black;
-}
-
-.far {
+.fas, .far {
 	color: rgb(71, 144, 153); 
-	align-items: center;
+	padding-right: 3%;
 }
-
-/*.fas {
-	color: rgb(71, 144, 153); 
-	align-items: center;
-}*/
 
 /* Footer */
 
@@ -291,43 +251,137 @@ footer {
 }
 
 /* Ecrans */
-
-@media screen and (max-width: 1280px) {
-
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
-@media screen and (max-width: 1280px)
-
-/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-@media all and (min-width: 1024px) and (max-width: 1280px)
-
-/* Sur les téléviseurs */
-@media tv
-
-/* Sur tous types d'écrans orientés verticalement */
-@media all and (orientation: portrait)
-
-#bloc_page
-{
-    width: 900px;
-    margin: auto;
-}
-
+ 
 @media all and (max-width: 1024px)
 {
-    section
-    {
-        display: block;
-        width: auto;
-    }
 
-    /*#liseré
-    {
-        display: none;
-    }
+header {
+	background-color: white;
+	flex-direction: column;
+}
 
-    #contenu
-    {
-        width: auto;
-    }
+.Photo {
+	padding-top: 30%;
+	padding-bottom: 0%;
+}
 
-}*/
+img {
+   	border: 5px solid rgb(71, 144, 153);
+}
+
+header h1 {
+	font-size: x-large;
+	text-align: center;
+}
+
+header h2 {
+	font-size: large;
+	text-align: center;
+}
+
+.identity {
+	padding-left: 0%;
+}
+
+.prenoms {
+	text-align: center;
+}
+
+.profession {
+	text-align: center;
+	padding-left: 0%;
+}
+
+.devel {
+    border-bottom: 2.3px solid rgb(71, 144, 153);
+    padding-bottom: 1%;
+}
+
+.title {
+	padding-top: 0%;
+	padding-bottom: 0%;
+	background-color: #ffffff;
+}
+
+.corps {
+    flex-direction: column-reverse;
+    width: auto;
+}
+
+.photo {
+    width: auto;
+    background-color: transparent;
+}
+
+.droite {
+    width: auto;
+}
+
+.droite h1, .droite h2, .droite h3 {
+    text-align: center;
+    width: auto;
+}
+
+.dateetlieu {
+	width: auto;
+	align-items: baseline;
+	font-weight: bold;
+}
+
+.information { 
+	padding-left: 1%;
+}
+
+.details {
+    padding-right: 0%;
+    padding-left: 0%;
+    align-self: stretch;
+    width: auto;
+}
+
+article {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.recommandation2 {
+	padding-left: 0%;
+}
+
+.gauche {
+    text-align: center;
+    width: auto;
+}
+
+.gauche p {
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    text-align: center;
+}
+
+.propos {
+	padding-bottom: 0%;
+}
+
+.icones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.icone {
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: solid;
+    padding: 1%;
+    color: rgb(64, 64, 64);
+}
+
+}
