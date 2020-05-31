@@ -132,6 +132,10 @@ h3 {
 	color: rgb(71, 144, 153);
 }
 
+p {
+	text-align: justify;
+}
+
 /* Gauche */
 
 .gauche {
@@ -155,7 +159,6 @@ h3 {
     padding-top: 6%;
     padding-bottom: 20%;
     background-color: rgb(71, 144, 153);
-    text-align: justify;
     color: rgb(64, 64, 64);
     font-weight: bold;
 }
@@ -315,6 +318,18 @@ header h2 {
     width: auto;
 }
 
+.droite p {
+	padding-right: 3%;
+	padding-left: 3%;
+}
+
+.dateetlieu {
+	width: auto;
+	align-items: baseline;
+	flex-shrink: 0;
+	text-align: center;
+}
+
 .information { 
 	padding-left: 1%;
 }
@@ -322,14 +337,16 @@ header h2 {
 .details {
     padding-right: 0%;
     padding-left: 0%;
-    text-align: center;
     width: auto;
 }
 
 article {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+}
+
+.recommandations {
+	text-align: center;
 }
 
 .recommandation2 {
@@ -337,16 +354,14 @@ article {
 }
 
 .gauche {
-    text-align: center;
     width: auto;
 }
 
 .gauche p {
-    padding-left: 0%;
-    padding-right: 0%;
+    padding-left: 3%;
+    padding-right: 3%;
     padding-top: 0%;
     padding-bottom: 0%;
-    text-align: center;
 }
 
 .propos {
@@ -357,14 +372,12 @@ article {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
     padding-top: 3%;
     padding-bottom: 3%;
 }
 
 .icone {
     justify-content: center;
-    align-items: center;
     border-radius: 100%;
     border: solid;
     padding: 1%;
