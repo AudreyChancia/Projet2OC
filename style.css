@@ -314,21 +314,8 @@ header h2 {
     width: auto;
 }
 
-.droite h1, .droite h2, .droite h3 {
-    text-align: center;
-    width: auto;
-}
-
-.droite p {
-	padding-right: 3%;
-	padding-left: 3%;
-}
-
 .dateetlieu {
 	width: auto;
-	align-items: baseline;
-	flex-shrink: 0;
-	text-align: center;
 }
 
 .information { 
@@ -343,15 +330,21 @@ header h2 {
 
 article {
     flex-direction: column;
-    align-items: center;
+    text-align: justify;
 }
 
-.recommandations {
-	text-align: center;
+.recommandations h2, .recommandations h3 {
+    text-align: justify;
+}
+
+.recommandations p {
+    text-align: justify;
 }
 
 .recommandation2 {
+	padding-top: 2%;
 	padding-left: 0%;
+    text-align: justify;
 }
 
 .gauche {
@@ -359,8 +352,6 @@ article {
 }
 
 .gauche p {
-    padding-left: 3%;
-    padding-right: 3%;
     padding-top: 0%;
     padding-bottom: 0%;
 }
