@@ -38,27 +38,28 @@
 header {
 	display: flex;
 	flex-wrap: nowrap;
-	color: rgb(64, 64, 64);
-	align-items: center;
+	color: rgb(66,66,66);
 }
 
 .Photo {
 	width: 25%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	background-color: rgb(71, 144, 153);
+	background-color: rgb(255,193,7);
 	flex-shrink: 0;
 	text-align: center;
+	padding-top: 2%;
 }
 
 img {
-	border-radius: 100%;
-	box-shadow: 0px 0px 20px rgb(64 64 64);
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	box-shadow: 0px 0px 20px rgb(66,66,66);
 }
 
 .title {
 	width: 75%;
 	background-color: #ffffff;
+	padding-top: 2%;
 }
 
 header h1 {
@@ -77,7 +78,7 @@ header h2 {
 
 .prenoms {
 	font-family: romanticallyregular, sans-serif;
-	color: rgb(71, 144, 153);
+	color: rgb(255,193,7);
 	text-align: left;
 }
 
@@ -92,8 +93,8 @@ header h2 {
 }
 
 .devel {
-    border-bottom: 2.3px solid rgb(71, 144, 153);
-    padding-bottom: 1%;
+	border-bottom: 2.3px solid rgb(255,193,7);
+	padding-bottom: 1%;
 }
 
 /* Eléments principaux de la page */
@@ -101,7 +102,7 @@ header h2 {
 body {
 	font-family: open_sansregular, sans-serif;
 	font-style: normal;
-	text-align: justify-all;
+	text-align: justify;
     margin: 1%;
     background-color: #ffffff;
 }
@@ -129,39 +130,34 @@ h2 {
 h3 {
 	font-size: medium;
 	font-weight: bolder;
-	color: rgb(71, 144, 153);
 }
 
 /* Gauche */
 
 .gauche {
-	background-color: rgb(71, 144, 153);
-    color: rgb(64, 64, 64);
-    text-align: left;
-    width: 25%;
-    position: relative;
+	background-color: rgb(255,193,7);
+	color: rgb(66,66,66);
+	text-align: left;
+	width: 25%;
+	position: relative;
 }
 
 .gauche h1 {
-	background-color: rgb(64, 64, 64);
-	color: rgb(71, 144, 153);
+	background-color: rgb(66,66,66);
+	color: rgb(255,193,7);
 	text-align: center;
 	padding: 3%;
 }
 
 .gauche p {
-    padding-left: 6%;
-    padding-right: 6%;
-    padding-top: 6%;
-    padding-bottom: 20%;
-    background-color: rgb(71, 144, 153);
-    color: rgb(64, 64, 64);
-    font-weight: bold;
-    text-align: justify;
-}
-
-.propos {
-	padding-bottom: 200%;
+	padding-left: 6%;
+	padding-right: 6%;
+	padding-top: 6%;
+	padding-bottom: 20%;
+	background-color: rgb(255,193,7);
+	color: rgb(66,66,66);
+	font-weight: bold;
+	text-align: justify;
 }
 
 .icones {
@@ -174,20 +170,27 @@ h3 {
 }
 
 .icone {
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    border: solid;
-    padding: 3%;
-    color: rgb(64, 64, 64);
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	border: solid;
+	padding: 1%;
+	font-size: 3em;
+	color: rgb(66,66,66);
+}
+
+.loisirs {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 /* Droite */
 
 .droite {
 	width: 75%;
-    color: rgb(64, 64, 64);
-    padding-top: 2%;
+	color: rgb(66,66,66);
+	padding-top: 2%;
 }
 
 .droite p {
@@ -219,7 +222,7 @@ h3 {
 }
 
 .droite h1 {
-	border-bottom: 2.3px solid rgb(71, 144, 153);
+	border-bottom: 2.3px solid rgb(255,193,7);
 	padding-bottom: 1%;
 	color: black;
 	text-align: left;
@@ -238,7 +241,7 @@ article {
 }
 
 .fas, .far {
-	color: rgb(71, 144, 153); 
+	color: rgb(255,193,7);
 	padding-right: 3%;
 }
 
@@ -247,12 +250,12 @@ article {
 footer {
 	text-align: center;
 	font-size: small;
-	color: rgb(64, 64, 64);
+	color: rgb(66,66,66);
 }
 
 /* Ecrans */
  
-@media all and (max-width: 1024px)
+@media all and (min-width: 426px) and (max-width: 1024px)
 {
 
 header {
@@ -268,7 +271,7 @@ header {
 }
 
 img {
-   	border: 5px solid rgb(71, 144, 153);
+	border: 5px solid rgb(255,193,7);
 }
 
 .title {
@@ -298,11 +301,6 @@ header h2 {
 .profession {
 	text-align: center;
 	padding-left: 0%;
-}
-
-.devel {
-    border-bottom: 2.3px solid rgb(71, 144, 153);
-    padding-bottom: 1%;
 }
 
 .corps {
@@ -356,24 +354,139 @@ article {
     padding-bottom: 0%;
 }
 
-.propos {
-	padding-bottom: 0%;
-}
-
 .icones {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     padding-top: 3%;
     padding-bottom: 3%;
 }
 
+.loisirs {
+	position: relative;
+}
+
+}
+
+@media all and (max-width: 425px) {
+
+header {
+	background-color: white;
+	flex-direction: column;
+}
+
+.Photo {
+	padding-top: 0%;
+	padding-bottom: 0%;
+	width: auto;
+	background-color: #ffffff;
+}
+
+img {
+	border: 5px solid rgb(255,193,7);
+}
+
+.title {
+	padding-top: 0%;
+	padding-bottom: 0%;
+	width: auto;
+}
+
+header h1 {
+	font-size: x-large;
+	text-align: center;
+}
+
+header h2 {
+	font-size: large;
+	text-align: center;
+}
+
+.identity {
+	padding-left: 0%;
+}
+
+.prenoms {
+	text-align: center;
+}
+
+.profession {
+	text-align: center;
+	padding-left: 0%;
+}
+
+.corps {
+	flex-direction: column-reverse;
+	width: auto;
+}
+
+.droite {
+	width: auto;
+}
+
+h1 {
+	font-size: large;
+}
+
+h2 {
+	font-size: medium;
+}
+
+h3 {
+	font-size: small;
+	font-weight: bolder;
+}
+
+.dateetlieu {
+	width: auto;
+}
+
+.information {
+	padding-left: 1%;
+}
+
+.details {
+	padding-right: 0%;
+	padding-left: 0%;
+	width: auto;
+}
+
+article {
+	flex-direction: column;
+	text-align: left;
+}
+
+.recommandations h2, .recommandations h3 {
+	text-align: justify;
+}
+
+.recommandations p {
+	text-align: justify;
+}
+
+.recommandation2 {
+	padding-top: 2%;
+	padding-left: 0%;
+	text-align: justify;
+}
+
+.gauche {
+	width: auto;
+}
+
+.gauche p {
+	padding-top: 0%;
+	padding-bottom: 0%;
+}
+
+.icones {
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
 .icone {
-    justify-content: center;
-    border-radius: 100%;
-    border: solid;
-    padding: 1%;
-    color: rgb(64, 64, 64);
+	font-size: 2em;
+}
+
+.loisirs {
+	position: relative;
 }
 
 }
