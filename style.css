@@ -179,6 +179,10 @@ h3 {
 	color: rgb(66,66,66);
 }
 
+.fa-swimmer, .fa-plane, .fa-film {
+	color: rgb(64, 64, 64);
+}
+
 .loisirs {
 	position: absolute;
 	bottom: 0;
