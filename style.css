@@ -179,7 +179,7 @@ h3 {
 	color: rgb(66,66,66);
 }
 
-.fa-swimmer, .fa-plane, .fa-film {
+.gauche .fas {
 	color: rgb(64, 64, 64);
 }
 
@@ -240,11 +240,20 @@ article {
 	display: flex;
 }
 
+span {
+	font-weight: bold;
+}
+
 .recommandation2 {
 	padding-left: 30%;
 }
 
-.fas, .far {
+.far {
+	color: rgb(255,193,7);
+	padding-right: 3%;
+}
+
+.droite .fas {
 	color: rgb(255,193,7);
 	padding-right: 3%;
 }
