@@ -380,7 +380,7 @@ article {
 @media all and (max-width: 425px) {
 
 header {
-	background-color: blue;
+	background-color: white;
 	flex-direction: column;
 }
 
